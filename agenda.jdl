@@ -1,0 +1,90 @@
+
+entity Employe {
+	numEmploye Integer
+    nom String
+    prenom String
+    telIntern String
+    email String
+    niveau Integer
+    
+}
+
+entity Departement {
+  num Integer
+  nom String
+}
+entity AgendaDept {
+  numAgenda Integer
+  dateMAJ LocalDate
+}
+entity ActiviteDept {
+  numAct Integer
+  typeD String
+  descript String
+  dateAct LocalDate
+  hDebut LocalDate
+  hFin LocalDate
+  dateCreation LocalDate
+  createur String
+}
+entity ProcesVerbal {
+  numProcesV Integer
+  resum String
+}
+entity Agenda {
+  numAgenda Integer
+  dateCreation LocalDate
+}
+
+entity Activite {
+  numActivite Integer
+  typeA String
+  description String
+  dateAct LocalDate
+  hDebut LocalDate
+  hFin LocalDate
+  dateCreation LocalDate
+  createur String
+  visible Integer
+}
+
+entity Alerte {
+  type String
+  delais Integer
+}
+
+
+relationship OneToOne {
+	Departement{agendaDept} to AgendaDept
+}
+
+relationship OneToOne {
+	ActiviteDept{ProcesVerbal} to ProcesVerbal
+}
+
+relationship OneToOne {
+	Employe{agenda} to Agenda
+}
+
+relationship ManyToMany {
+	Employe{activiteDept(numAct)} to ActiviteDept{employe}
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Employe to Departement{employe}
+	
+}
+relationship OneToMany {
+	ActiviteDept to AgendaDept{activiteDept}
+	
+}
+relationship OneToMany {
+	Alerte to Activite{alerte}
+	
+}
+relationship OneToMany {
+	Activite to Agenda{activite}
+	
+}
+

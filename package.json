@@ -64,7 +64,7 @@
     "webpack-dev-server": "webpack serve"
   },
   "config": {
-    "backend_port": 8080,
+    "backend_port": 8081,
     "default_environment": "prod",
     "packaging": "jar"
   },
@@ -76,6 +76,7 @@
     "axios": "1.6.8",
     "bootstrap": "5.3.3",
     "dayjs": "1.11.11",
+    "jhipster-core": "^7.3.4",
     "lodash": "4.17.21",
     "path-browserify": "1.0.1",
     "react": "18.3.1",
@@ -106,7 +107,7 @@
     "@types/webpack-env": "1.18.4",
     "@typescript-eslint/eslint-plugin": "7.7.1",
     "@typescript-eslint/parser": "7.7.1",
-    "autoprefixer": "10.4.19",
+    "autoprefixer": "^10.4.19",
     "browser-sync": "2.29.3",
     "browser-sync-webpack-plugin": "2.3.0",
     "concurrently": "8.2.2",
@@ -131,6 +132,7 @@
     "json-loader": "0.5.7",
     "lint-staged": "15.2.2",
     "mini-css-extract-plugin": "2.9.0",
+    "postcss": "^8.4.38",
     "postcss-loader": "8.1.1",
     "prettier": "3.2.5",
     "prettier-plugin-java": "2.6.0",
@@ -146,6 +148,7 @@
     "sourcemap-istanbul-instrumenter-loader": "0.2.0",
     "style-loader": "4.0.0",
     "swagger-ui-dist": "5.17.2",
+    "tailwindcss": "^3.4.3",
     "terser-webpack-plugin": "5.3.10",
     "thread-loader": "4.0.2",
     "ts-jest": "29.1.2",

@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20240501213936"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delais",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Alerte",
+  "relationships": [
+    {
+      "otherEntityName": "activite",
+      "otherEntityRelationshipName": "alerte",
+      "relationshipName": "activite",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

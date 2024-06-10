@@ -1,0 +1,26 @@
+{
+  "annotations": {
+    "changelogDate": "20240501213934"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "numAgenda",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateCreation",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Agenda",
+  "relationships": [
+    {
+      "otherEntityName": "activite",
+      "relationshipName": "activite",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

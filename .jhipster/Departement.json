@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20240501213930"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "num",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Departement",
+  "relationships": [
+    {
+      "otherEntityName": "agendaDept",
+      "relationshipName": "agendaDept",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "employe",
+      "relationshipName": "employe",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

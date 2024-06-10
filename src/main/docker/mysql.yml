@@ -2,7 +2,7 @@
 name: agenda
 services:
   mysql:
-    image: mysql:8.3.0
+    image: mysql:8.1.0
     volumes:
       - ./config/mysql:/etc/mysql/conf.d
     #   - ~/volumes/jhipster/agenda/mysql/:/var/lib/mysql/

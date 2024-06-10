@@ -41,6 +41,20 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.mycompany.myapp.repository.UserRepository.USERS_BY_EMAIL_CACHE);
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Employe.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Employe.class.getName() + ".departements");
+            createCache(cm, com.mycompany.myapp.domain.Employe.class.getName() + ".activiteDepts");
+            createCache(cm, com.mycompany.myapp.domain.Departement.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.AgendaDept.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.ActiviteDept.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.ActiviteDept.class.getName() + ".agendaDepts");
+            createCache(cm, com.mycompany.myapp.domain.ActiviteDept.class.getName() + ".employes");
+            createCache(cm, com.mycompany.myapp.domain.ProcesVerbal.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Agenda.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Activite.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Activite.class.getName() + ".agenda");
+            createCache(cm, com.mycompany.myapp.domain.Alerte.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Alerte.class.getName() + ".activites");
             // jhipster-needle-ehcache-add-entry
         };
     }

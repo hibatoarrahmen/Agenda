@@ -1,0 +1,19 @@
+{
+  "annotations": {
+    "changelogDate": "20240501213933"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "numProcesV",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resum",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ProcesVerbal",
+  "relationships": [],
+  "searchEngine": "no"
+}

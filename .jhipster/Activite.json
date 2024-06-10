@@ -1,0 +1,61 @@
+{
+  "annotations": {
+    "changelogDate": "20240501213935"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "numActivite",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "typeA",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateAct",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "hDebut",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "hFin",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateCreation",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "createur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "visible",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Activite",
+  "relationships": [
+    {
+      "otherEntityName": "agenda",
+      "otherEntityRelationshipName": "activite",
+      "relationshipName": "agenda",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "alerte",
+      "relationshipName": "alerte",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

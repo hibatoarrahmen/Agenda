@@ -1,0 +1,64 @@
+{
+  "annotations": {
+    "changelogDate": "20240501213932"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "numAct",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "typeD",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descript",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateAct",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "hDebut",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "hFin",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateCreation",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "createur",
+      "fieldType": "String"
+    }
+  ],
+  "name": "ActiviteDept",
+  "relationships": [
+    {
+      "otherEntityName": "procesVerbal",
+      "relationshipName": "procesVerbal",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "agendaDept",
+      "otherEntityRelationshipName": "activiteDept",
+      "relationshipName": "agendaDept",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "employe",
+      "otherEntityRelationshipName": "activiteDept",
+      "relationshipName": "employe",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

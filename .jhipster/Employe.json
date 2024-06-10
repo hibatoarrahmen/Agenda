@@ -1,0 +1,57 @@
+{
+  "annotations": {
+    "changelogDate": "20240501213929"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "numEmploye",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telIntern",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "niveau",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "Employe",
+  "relationships": [
+    {
+      "otherEntityName": "agenda",
+      "relationshipName": "agenda",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "departement",
+      "otherEntityRelationshipName": "employe",
+      "relationshipName": "departement",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "numAct",
+      "otherEntityName": "activiteDept",
+      "otherEntityRelationshipName": "employe",
+      "relationshipName": "activiteDept",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

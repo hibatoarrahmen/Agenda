@@ -16,8 +16,11 @@ export const Home = () => {
         <span className="hipster rounded" />
       </Col>
       <Col md="9">
-        <h1 className="display-4">Bienvenue, Java Hipster !</h1>
-        <p className="lead">Ceci est votre page d&apos;accueil</p>
+        <h1 className="display-4">Bienvenue dans notre application de gestion Agenda realise par Hiba Ghrab et Malek Ben Kemla </h1>
+        <p className="lead">
+          Projet de génie logiciel : agenda avec Spring Boot, React, Docker et JHipster. Backend MySQL robuste, frontend React interactif,
+          déploiement facile avec Docker
+        </p>
         {account?.login ? (
           <div>
             <Alert color="success">Vous êtes connecté en tant que &quot;{account.login}&quot;.</Alert>
@@ -42,43 +45,6 @@ export const Home = () => {
             </Alert>
           </div>
         )}
-        <p>Si vous avez des questions à propos de JHipster :</p>
-
-        <ul>
-          <li>
-            <a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer">
-              Page d&apos;accueil de JHipster
-            </a>
-          </li>
-          <li>
-            <a href="https://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer">
-              JHipster sur Stack Overflow
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer">
-              JHipster bug tracker
-            </a>
-          </li>
-          <li>
-            <a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-              JHipster public chat room
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer">
-              Suivez @jhipster sur Twitter
-            </a>
-          </li>
-        </ul>
-
-        <p>
-          Si vous aimez JHipster, donnez nous une étoile sur{' '}
-          <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          !
-        </p>
       </Col>
     </Row>
   );
